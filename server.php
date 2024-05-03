@@ -12,6 +12,9 @@ $text = $_GET['text'];
 <h3>MODIFIED TEXT</h3>
 <p><?php echo str_replace($text, "***", $text); ?></p>
 
+<h3>MODIFIED TEXT LENGTH</h3>
+<p><?php echo strlen(str_replace($text, "***", $text)); ?></p>
+
 
 
 
