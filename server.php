@@ -8,3 +8,11 @@ $text = $_GET['text'];
 
 <h3>ORIGINAL TEXT LENGTH</h3>
 <p><?php echo strlen($text); ?></p>
+
+<h3>MODIFIED TEXT</h3>
+<p><?php echo str_replace($text, "***", $text); ?></p>
+
+
+
+
+
