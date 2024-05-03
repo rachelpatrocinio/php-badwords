@@ -8,8 +8,14 @@
 <body>
 
 <form action="./server.php">
+    <h1>Il tuo messaggio</h1>
     <textarea name="text" id="text" cols="30" rows="10"></textarea>
+
+    <h1>Parola da censurare</h1>
+    <textarea name="censored" id="censored" cols="30" rows="10"></textarea>
     <button>INVIA</button>
+
+    
 </form>
     
 </body>

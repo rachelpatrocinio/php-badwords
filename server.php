@@ -1,7 +1,8 @@
 <?php
-var_dump($_GET);
+// var_dump($_GET);
 $text = $_GET['text'];
-$modified_text = str_replace($text, "***", $text);
+$censored = $_GET['censored'];
+$modified_text = str_replace($censored, "***", $text);
 ?>
 
 <h3>ORIGINAL TEXT</h3>
