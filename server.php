@@ -1,6 +1,7 @@
 <?php
-// var_dump($_GET);
+var_dump($_GET);
 $text = $_GET['text'];
+$modified_text = str_replace($text, "***", $text);
 ?>
 
 <h3>ORIGINAL TEXT</h3>
@@ -10,10 +11,10 @@ $text = $_GET['text'];
 <p><?php echo strlen($text); ?></p>
 
 <h3>MODIFIED TEXT</h3>
-<p><?php echo str_replace($text, "***", $text); ?></p>
+<p><?php echo $modified_text; ?></p>
 
 <h3>MODIFIED TEXT LENGTH</h3>
-<p><?php echo strlen(str_replace($text, "***", $text)); ?></p>
+<p><?php echo strlen($modified_text); ?></p>
 
 
 
