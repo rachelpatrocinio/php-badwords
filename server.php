@@ -14,7 +14,10 @@ $modified_text = str_replace($censored, "***", $text, $count);
 <h3>CENSORED TEXT</h3>
 <p><?php echo $modified_text; ?></p>
 
-<h3>CENSORED WORD LENGTH</h3>
+<h3>CENSORED TEXT LENGTH</h3>
+<p><?php echo strlen($modified_text); ?></p>
+
+<h3>REPLACEMENTS:</h3>
 <p><?php echo $count; ?></p>
 
 
